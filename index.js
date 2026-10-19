@@ -32,3 +32,15 @@ app.get('/', (req, res) => {
         res.status(500).send('Internel Server Error')
     });
 });
+
+// POST (Tambah data)
+app.post('/biodata', (req, res) => {
+    const { id, nama, nim, jurusan } = req.body
+
+    pool.query(
+        'INSERT INTO biodata (id, nama, nim, jurusan) VALUES ($1, $2, $3, $4)', 
+        [id, nama, nim, jurusan]
+    )
+    .then(result => (result.rows[0]))
+    .catch(err => console.error(err));
+});

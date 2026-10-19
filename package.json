@@ -1,0 +1,25 @@
+{
+  "name": "pertem6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Prak6.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Indrianingsihputri/pertem6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Indrianingsihputri/pertem6/issues"
+  },
+  "homepage": "https://github.com/Indrianingsihputri/pertem6#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  }
+}
